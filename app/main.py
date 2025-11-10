@@ -8,7 +8,7 @@ def go_to_cafe(friends: list, cafe: Cafe) -> str:
 
     for friend in friends:
         try:
-            Cafe.visit_cafe(cafe, friend)
+            cafe.visit_cafe(friend)
         except error.NotWearingMaskError:
             masks_to_buy += 1
         except error.VaccineError:

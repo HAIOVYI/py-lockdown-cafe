@@ -12,8 +12,8 @@ class NotVaccinatedError(VaccineError):
 
 class OutdatedVaccineError(VaccineError):
     def __init__(self, name: str) -> None:
-        massage = f"{name} has an outdated vaccine"
-        super().__init__(name, massage)
+        message = f"{name} has an outdated vaccine"
+        super().__init__(name, message)
 
 
 class NotWearingMaskError(Exception):
